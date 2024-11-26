@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+     <title>Number Guesing Game</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+     <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+     <div class="fuhadShiblu_boxMain">
+          <h1 class="fuhadShiblu_welcomeTxt">Welcome to the exciting new era of fun! Let's enjoy this game together for an unforgettable experience.</h1>
+          <button class="fuhadShiblu_gameStart">Get Started</button>
+          <i class="fa-solid fa-arrow-left fuhadShiblu_arrow1"></i>
+          <i class="fa-solid fa-arrow-left fuhadShiblu_arrow2"></i>
+          <i class="fa-solid fa-arrow-left fuhadShiblu_arrow3"></i>
+          <i class="fa-solid fa-arrow-left fuhadShiblu_arrow4"></i>
+          <h2 class="fuhadShiblu_playersNameTxt">Input Players Name to Play this Game</h2>
+          <form class="fuhadShiblu_form">
+               <label class="fuhadShiblu_playerName fuhadShiblu_p1Name">Player 1</label>
+               <input class="fuhadShiblu_playerInput fuhadShiblu_p1Input" type="text" placeholder="Enter a player name">
+               <p class="fuhadShiblu_playerErr fuhadShiblu_p1Err"></p>
+               <label class="fuhadShiblu_playerName fuhadShiblu_p2Name">Player 2</label>
+               <input class="fuhadShiblu_playerInput fuhadShiblu_p2Input" type="text" placeholder="Enter a player name">
+               <p class="fuhadShiblu_playerErr fuhadShiblu_p2Err"></p>
+               <button class="fuhadShiblu_gameStartBtn" type="submit">Let's Play</button>
+          </form>
+          <div class="fuhadShiblu_vsBoxMain">
+               <h2 class="fuhadShiblu_vsBoxTxt1"></h2>
+               <p class="vsBoxMainTxt">VS</p>
+               <h2 class="fuhadShiblu_vsBoxTxt2"></h2>
+          </div>
+          <button class="fuhadShiblu_lpGame" type="submit">Go</button>
+          <h2 class="fuhadShiblu_pTxtHeader fuhadShiblu_p1TxtHeader">Provide a number and challenge to <span class="fuhadShiblu_pInpLabel fuhadShiblu_p1InpLabel"></span> for guess to win</h2>
+          <form class="fuhadShiblu_pTurn fuhadShiblu_p1Turn">
+               <label class="fuhadShiblu_p1Label"><span class="fuhadShiblu_pLabelTurn fuhadShiblu_p1LabelTurn"></span>'s Turn</label>
+               <input class="fuhadShiblu_pTurnInput fuhadShiblu_p1TurnInput" type="number" placeholder="Enter a number">
+               <p class="fuhadShiblu_playerErr fuhadShiblu_p1TurnErr"></p>
+               <button class="fuhadShiblu_pBtn fuhadShiblu_p1Btn" type="submit">Challenge</button>
+          </form>
+          <h2 class="fuhadShiblu_pTxtHeader fuhadShiblu_p2TxtHeader">Guess <span class="fuhadShiblu_pInpLabel fuhadShiblu_p2InpLabel"></span>'s number to win</h2>
+          <form class="fuhadShiblu_pTurn fuhadShiblu_p2Turn">
+               <label class="fuhadShiblu_p1Label"><span class="fuhadShiblu_pLabelTurn fuhadShiblu_p2LabelTurn"></span>'s Turn</label>
+               <input class="fuhadShiblu_pTurnInput fuhadShiblu_p2TurnInput" type="number" placeholder="Enter a number">
+               <p class="fuhadShiblu_playerErr fuhadShiblu_p2TurnErr"></p>
+               <button class="fuhadShiblu_pBtn fuhadShiblu_p2Btn" type="submit">Guess</button>
+          </form>
+          <h3 class="fuhadShiblu_gO">Game Over!</h3>
+          <p class="fuhadShiblu_winner">Congratulations! <span class="fuhadShiblu_winName"></span>. You are Winner.</p>
+     </div>
+     <footer>Created with <i class="fa-solid fa-heart fuhadShiblu_heart"></i> by <a href="https://github.com/fuhad-shiblu" target="_blank">Fuhad Hasan Shiblu</a></footer>
+     <script src="assets/js/script.js"></script>
+</body>
+</html>

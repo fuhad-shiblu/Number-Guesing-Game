@@ -37,6 +37,11 @@ let fuhadShiblu_p2TurnErr          = document.querySelector('.fuhadShiblu_p2Turn
 let fuhadShiblu_gO          = document.querySelector('.fuhadShiblu_gO')
 let fuhadShiblu_winner          = document.querySelector('.fuhadShiblu_winner')
 let fuhadShiblu_winName          = document.querySelector('.fuhadShiblu_winName')
+let fuhadShiblu_p1NumShow          = document.querySelector('.fuhadShiblu_p1NumShow')
+let fuhadShiblu_p2NumShow          = document.querySelector('.fuhadShiblu_p2NumShow')
+let fuhadShiblu_winShowNum          = document.querySelector('.fuhadShiblu_winShowNum')
+let fuhadShiblu_p1Numeric          = document.querySelector('.fuhadShiblu_p1Numeric')
+let fuhadShiblu_p2Numeric          = document.querySelector('.fuhadShiblu_p2Numeric')
 let p2Attempts = 0
 
 fuhadShiblu_gameStart.addEventListener('click' , ()=>{
@@ -184,16 +189,26 @@ fuhadShiblu_p2Btn.addEventListener('click' , (e)=>{
                fuhadShiblu_winner.style      = 'transform:scale(1)'
                fuhadShiblu_gO.style          = 'transform:scale(1)'
                fuhadShiblu_winName.innerHTML = fuhadShiblu_p1Input.value
-               fuhadShiblu_boxMain.style          = 'background:#6eabda80'
+               fuhadShiblu_boxMain.style          = 'background:#6eabda'
+               fuhadShiblu_p1NumShow.innerHTML    = fuhadShiblu_p1Input.value
+               fuhadShiblu_p2NumShow.innerHTML    = fuhadShiblu_p2Input.value
+               fuhadShiblu_winShowNum.style          = 'transform:scale(1)'
+               fuhadShiblu_p1Numeric.innerHTML    = fuhadShiblu_p1TurnInput.value
+               fuhadShiblu_p2Numeric.innerHTML    = fuhadShiblu_p2TurnInput.value
           }
       } else {
           p2Attempts = 0;
-          fuhadShiblu_p2Turn.style      = 'transform:scale(0)'
-          fuhadShiblu_p2TxtHeader.style = 'transform:scale(0)'
-          fuhadShiblu_arrow4.style      = 'transform:scale(0)'
-          fuhadShiblu_winner.style      = 'transform:scale(1)'
-          fuhadShiblu_gO.style          = 'transform:scale(1)'
-          fuhadShiblu_winName.innerHTML = fuhadShiblu_p2Input.value
-          fuhadShiblu_boxMain.style          = 'background:#6eabda80'
+          fuhadShiblu_p2Turn.style           = 'transform:scale(0)'
+          fuhadShiblu_p2TxtHeader.style      = 'transform:scale(0)'
+          fuhadShiblu_arrow4.style           = 'transform:scale(0)'
+          fuhadShiblu_winner.style           = 'transform:scale(1)'
+          fuhadShiblu_gO.style               = 'transform:scale(1)'
+          fuhadShiblu_winName.innerHTML      = fuhadShiblu_p2Input.value
+          fuhadShiblu_boxMain.style          = 'background:#6eabda'
+          fuhadShiblu_p1NumShow.innerHTML    = fuhadShiblu_p1Input.value
+          fuhadShiblu_p2NumShow.innerHTML    = fuhadShiblu_p2Input.value
+          fuhadShiblu_winShowNum.style       = 'transform:scale(1)'
+          fuhadShiblu_p1Numeric.innerHTML    = fuhadShiblu_p1TurnInput.value
+          fuhadShiblu_p2Numeric.innerHTML    = fuhadShiblu_p2TurnInput.value
       }
 })
